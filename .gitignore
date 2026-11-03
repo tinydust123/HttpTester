@@ -1,0 +1,38 @@
+# Build output and local tools
+**/bin/
+**/obj/
+/artifacts/
+/.vs/
+/.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.exe
+*.dll
+*.pdb
+*.zip
+
+# User requests, workspaces, credentials and migration staging
+**/data/
+**/requests.json
+**/workspaces.json
+HttpDetector.migration-*/
+*.bak
+*.tmp
+*.log
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.pem
+*.key
+
+# Test output and Python caches
+TestResults/
+coverage/
+*.trx
+__pycache__/
+*.py[cod]
+.venv/

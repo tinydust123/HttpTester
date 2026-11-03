@@ -1,0 +1,40 @@
+name: 问题反馈
+description: 报告崩溃、请求错误、保存异常或界面问题。
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: 请使用脱敏数据；安全漏洞请按照 SECURITY.md 的渠道报告。
+  - type: input
+    id: version
+    attributes:
+      label: 软件版本与分发方式
+      placeholder: 例如 1.1.0，轻量版或独立版
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows 版本与运行环境
+      placeholder: 例如 Windows 11 x64；轻量版请补充 .NET 运行时版本
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 请使用 localhost 或公开示例，不要填写真实令牌和密码。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为、错误信息与脱敏截图
+    validations:
+      required: true

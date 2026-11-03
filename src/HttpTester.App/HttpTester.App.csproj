@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Http探测器</AssemblyName>
+    <RootNamespace>HttpTester.App</RootNamespace>
+    <Product>Http探测器</Product>
+    <AssemblyTitle>Http探测器</AssemblyTitle>
+    <Description>轻量 HTTP / HTTPS 接口测试工具</Description>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets/HttpDetector.ico</ApplicationIcon>
+    <Version>1.1.0</Version>
+    <RollForward>LatestMajor</RollForward>
+  </PropertyGroup>
+  <ItemGroup><ProjectReference Include="../HttpTester.Core/HttpTester.Core.csproj" /></ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets/HttpDetector.ico" />
+    <Resource Include="Assets/HttpDetector.png" />
+  </ItemGroup>
+</Project>
